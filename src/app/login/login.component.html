@@ -1,0 +1,36 @@
+<div class="row">
+    <div class="col">
+        <form [formGroup]="signupForm" (ngSubmit)="onSubmit()">
+            <div class="form-group">
+                <label for="login">Login</label>
+                <input 
+                    type="text"
+                    id="login"
+                    formControlName="login"
+                    class="form-control">
+                <span
+                    *ngIf="!signupForm.get('login').valid && signupForm.get('login').touched"
+                    class="text-muted">
+                This name is invalid
+            </span>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input 
+                    type="text"
+                    id="email"
+                    formControlName="email"
+                    class="form-control">
+                <span
+                    *ngIf="!signupForm.get('email').valid && signupForm.get('email').touched"
+                    class="text-muted">
+                Please enter a valid email
+            </span>
+            </div>
+            <button 
+                class="btn btn-primary" 
+                type="submit"
+                [disabled]="!signupForm.valid">Submit</button>
+        </form>
+    </div>
+</div>

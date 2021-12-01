@@ -1,0 +1,13 @@
+.price {
+    font-size: 2rem;
+    height: 50px;
+    background-color: rgba(33, 78, 2, 0.4);
+    border-radius: 10px;
+    transition: all 0.2s;
+    font-family:'Times New Roman', Times, serif;
+
+    &:hover {
+        background-color: rgba(1, 59, 1, 0.8);
+        color: #fff;
+    }
+}

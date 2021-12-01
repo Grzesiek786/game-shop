@@ -1,0 +1,14 @@
+<div class="row">
+    <div class="col-md-6">
+        <app-games-list></app-games-list>
+    </div>
+    <div class="col-md-6">
+        <router-outlet></router-outlet>
+        <!-- <app-games-detail
+        *ngIf="selectedGame; else infoText"
+        [game]="selectedGame"></app-games-detail>
+        <ng-template #infoText>
+            <p>Please select a Game!</p>
+        </ng-template> -->
+    </div>
+</div>

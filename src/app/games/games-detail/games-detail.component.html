@@ -1,0 +1,33 @@
+<div class="row">
+    <div class="col">
+        <img 
+            [src]="game.imagePath" 
+            alt="game.name" 
+            class="img-fluid">
+    </div>
+</div>
+<div class="row">
+    <div class="col">
+        <h1>{{ game.name }}</h1>
+    </div>
+</div>
+<div class="row">
+    <div class="col">
+        <div 
+            class="btn-group" appDropdown>
+            <button
+                type="button"
+                class="btn btn-primary dropdown-toggle">Game Manage
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Edit Game</a></li>
+                <li><a class="dropdown-item" href="#">Delete Game</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col">
+        {{ game.description }}
+    </div>
+</div>

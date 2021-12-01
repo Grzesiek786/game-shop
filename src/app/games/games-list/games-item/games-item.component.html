@@ -1,0 +1,19 @@
+<a 
+    style="cursor:pointer"
+    [routerLink]="[index]"
+    routerLinkActive="active"
+    class="list-group-item list-group-item-action clearfix">
+<div class="media">
+    <div class="media-body">
+        <h5 class="mt-0 mb-1">{{ game.name }}</h5>
+        <p>{{ game.description | shorten:45 }}</p>
+    </div>
+    <span class="ml-3">
+        <img 
+        [src]="game.imagePath" 
+        alt="game.name"
+        class="img-fluid"
+        style="max-height: 100px; max-width: 100px">
+    </span>
+</div>
+</a>
